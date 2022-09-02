@@ -63,4 +63,6 @@ target_link_libraries(CameraPublish ${catkin_LIBRARIES}
 target_link_libraries(ImgView ${catkin_LIBRARIES}
         /usr/local/lib/libopencv_imgproc.so.3.4
         /usr/local/lib/libopencv_core.so.3.4)
-target_link_libraries(SubscribeTopic ${catkin_LIBRARIES})
+target_link_libraries(SubscribeTopic ${catkin_LIBRARIES}
+        /usr/local/lib/libopencv_imgproc.so.3.4
+        /usr/local/lib/libopencv_core.so.3.4)

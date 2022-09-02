@@ -156,6 +156,8 @@ devel/lib/CameraVideoTopic/SubscribeTopic: /opt/ros/noetic/lib/libcpp_common.so
 devel/lib/CameraVideoTopic/SubscribeTopic: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
 devel/lib/CameraVideoTopic/SubscribeTopic: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 devel/lib/CameraVideoTopic/SubscribeTopic: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+devel/lib/CameraVideoTopic/SubscribeTopic: /usr/local/lib/libopencv_imgproc.so.3.4
+devel/lib/CameraVideoTopic/SubscribeTopic: /usr/local/lib/libopencv_core.so.3.4
 devel/lib/CameraVideoTopic/SubscribeTopic: CMakeFiles/SubscribeTopic.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kobosp/SLMAC/CameraVideoTopic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable devel/lib/CameraVideoTopic/SubscribeTopic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SubscribeTopic.dir/link.txt --verbose=$(VERBOSE)

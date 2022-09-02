@@ -6,7 +6,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="" />
+    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubscribeTopic" beforeDir="false" afterPath="$PROJECT_DIR$/SubscribeTopic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/src/SubscribeTopic.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/src/SubscribeTopic.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/SubscribeTopic" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/SubscribeTopic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SubscribeTopic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SubscribeTopic.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +27,14 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2CI0WRuyWobQzsqUGTeO8E5o4zF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,7 +68,7 @@
       <workItem from="1659407081127" duration="2437000" />
       <workItem from="1659438865931" duration="847000" />
       <workItem from="1659452300023" duration="4132000" />
-      <workItem from="1661863705359" duration="6909000" />
+      <workItem from="1661863705359" duration="16640000" />
     </task>
     <servers />
   </component>
