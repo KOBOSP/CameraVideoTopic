@@ -1,0 +1,8 @@
+prefix=/home/kobosp/SLMAC/CameraVideoTopic/build/devel
+
+Name: CameraVideoTopic
+Description: Description of CameraVideoTopic
+Version: 0.0.0
+Cflags: -I/home/kobosp/SLMAC/CameraVideoTopic/build/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs message_runtime
