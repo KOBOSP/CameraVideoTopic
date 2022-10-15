@@ -9,7 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="">
+    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="NUC12FixBug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CameraPublish" beforeDir="false" afterPath="$PROJECT_DIR$/CameraPublish" afterDir="false" />
@@ -229,8 +229,16 @@
       <workItem from="1659438865931" duration="847000" />
       <workItem from="1659452300023" duration="4132000" />
       <workItem from="1661863705359" duration="16640000" />
-      <workItem from="1665748034699" duration="11589000" />
+      <workItem from="1665748034699" duration="11993000" />
     </task>
+    <task id="LOCAL-00001" summary="NUC12FixBug">
+      <created>1665808629023</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665808629023</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,5 +254,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="NUC12FixBug" />
+    <option name="LAST_COMMIT_MESSAGE" value="NUC12FixBug" />
   </component>
 </project>
