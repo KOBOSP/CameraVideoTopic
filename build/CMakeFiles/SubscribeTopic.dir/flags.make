@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall  -O3 -march=native -std=c++11 -O3 -DNDEBUG   -W -Wall -Wno-un
 
 CXX_DEFINES = -DCOMPILEDWITHC11 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"CameraVideoTopic\"
 
-CXX_INCLUDES = -I/home/kobosp/SLMAC/CameraVideoTopic/build/devel/include -I/home/kobosp/SLMAC/CameraVideoTopic/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv4 -I/usr/local/include/opencv 
+CXX_INCLUDES = -I/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/devel/include -I/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv4 -isystem /home/kobosp/opencv-3.4.18/18InstallDir/include -isystem /home/kobosp/opencv-3.4.18/18InstallDir/include/opencv 
 

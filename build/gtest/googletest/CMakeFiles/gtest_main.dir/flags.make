@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST
 
 CXX_DEFINES = -DGTEST_CREATE_SHARED_LIBRARY=1 -DROS_PACKAGE_NAME=\"CameraVideoTopic\" -Dgtest_main_EXPORTS
 
-CXX_INCLUDES = -I/home/kobosp/SLMAC/CameraVideoTopic/include -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest 
+CXX_INCLUDES = -I/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/include -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest 
 

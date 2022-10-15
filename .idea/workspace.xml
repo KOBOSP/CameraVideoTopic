@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
@@ -9,15 +12,172 @@
     <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CameraPublish" beforeDir="false" afterPath="$PROJECT_DIR$/CameraPublish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImgView" beforeDir="false" afterPath="$PROJECT_DIR$/ImgView" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SubscribeTopic" beforeDir="false" afterPath="$PROJECT_DIR$/SubscribeTopic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.16.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/3.16.3/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/src/CameraPublish.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/src/CameraPublish.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_gencpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_gencpp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages_cpp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages_eus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages_eus.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages_lisp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages_lisp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages_nodejs.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages_nodejs.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages_py.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_generate_messages_py.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_geneus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_geneus.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_genlisp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_genlisp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_gennodejs.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_gennodejs.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_genpy.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraVideoTopic_genpy.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/src/ImgView.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/src/ImgView.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_genmsg_py.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_genmsg_py.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_genmsg_py.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_genmsg_py.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir/progress.make" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/src/SubscribeTopic.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/src/SubscribeTopic.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/_CameraVideoTopic_generate_messages_check_deps_NavSatFix.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/_CameraVideoTopic_generate_messages_check_deps_NavSatFix.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/_catkin_empty_exported_target.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/_catkin_empty_exported_target.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/clean_test_results.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/clean_test_results.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/download_extra_data.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/download_extra_data.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/doxygen.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/doxygen.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/rosbuild_clean-test-results.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/rosbuild_clean-test-results.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/rosbuild_precompile.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/rosbuild_precompile.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/rosbuild_premsgsrvgen.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/rosbuild_premsgsrvgen.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/roscpp_generate_messages_eus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/roscpp_generate_messages_eus.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/roscpp_generate_messages_py.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/roscpp_generate_messages_py.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/rospack_genmsg.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/rospack_genmsg.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/rospack_genmsg_libexe.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/rospack_genmsg_libexe.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/rospack_gensrv.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/rospack_gensrv.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/run_tests.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/run_tests.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/std_msgs_generate_messages_py.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/std_msgs_generate_messages_py.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/test-future.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/test-future.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/test-results-run.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/test-results-run.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/test-results.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/test-results.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/tests.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/tests.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CTestConfiguration.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CTestCustom.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CTestTestfile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/atomic_configure/.rosinstall" beforeDir="false" afterPath="$PROJECT_DIR$/build/atomic_configure/.rosinstall" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/atomic_configure/local_setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/atomic_configure/local_setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/atomic_configure/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/atomic_configure/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/CameraVideoTopic-msg-extras.cmake.develspace.in" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/CameraVideoTopic-msg-extras.cmake.develspace.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/installspace/CameraVideoTopicConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/installspace/CameraVideoTopicConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/pkg.develspace.context.pc.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/pkg.develspace.context.pc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/stamps/CameraVideoTopic/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/stamps/CameraVideoTopic/_setup_util.py.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/stamps/CameraVideoTopic/pkg-genmsg.cmake.em.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/stamps/CameraVideoTopic/pkg-genmsg.cmake.em.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cmake/CameraVideoTopic-genmsg-context.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake/CameraVideoTopic-genmsg-context.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cmake/CameraVideoTopic-genmsg.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake/CameraVideoTopic-genmsg.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/.catkin" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/.catkin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/.rosinstall" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/.rosinstall" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/include/CameraVideoTopic/NavSatFix.h" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/include/CameraVideoTopic/NavSatFix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/CameraPublish" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/CameraPublish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/ImgView" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/ImgView" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/SubscribeTopic" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/SubscribeTopic" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SubscribeTopic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SubscribeTopic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/lib/pkgconfig/CameraVideoTopic.pc" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/lib/pkgconfig/CameraVideoTopic.pc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/local_setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/local_setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/share/CameraVideoTopic/cmake/CameraVideoTopic-msg-extras.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/share/CameraVideoTopic/cmake/CameraVideoTopic-msg-extras.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/share/CameraVideoTopic/cmake/CameraVideoTopic-msg-paths.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/share/CameraVideoTopic/cmake/CameraVideoTopic-msg-paths.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/share/CameraVideoTopic/cmake/CameraVideoTopicConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/share/CameraVideoTopic/cmake/CameraVideoTopicConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/share/roseus/ros/CameraVideoTopic/manifest.l" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/share/roseus/ros/CameraVideoTopic/manifest.l" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_ros.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build_ros.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CameraPublish.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/CameraPublish.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +199,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kobosp/ETHkalibr&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,10 +229,22 @@
       <workItem from="1659438865931" duration="847000" />
       <workItem from="1659452300023" duration="4132000" />
       <workItem from="1661863705359" duration="16640000" />
+      <workItem from="1665748034699" duration="11589000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

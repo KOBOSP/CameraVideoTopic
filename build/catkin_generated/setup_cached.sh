@@ -7,9 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/kobosp/SLMAC/CameraVideoTopic/build/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/kobosp/SLMAC/CameraVideoTopic/build/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH='/home/kobosp/SLMAC/CameraVideoTopic/build/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/usr/local/lib/pkgconfig'
-export PYTHONPATH="/home/kobosp/SLMAC/CameraVideoTopic/build/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES='/home/kobosp/SLMAC/CameraVideoTopic/build/devel/share/common-lisp'
-export ROS_PACKAGE_PATH='/home/kobosp/SLMAC/CameraVideoTopic:/opt/ros/noetic/share'
+export CMAKE_PREFIX_PATH="/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PYTHONPATH="/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROS_PACKAGE_PATH="/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic:$ROS_PACKAGE_PATH"

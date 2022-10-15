@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/usr/src/googletest/googlemock/src/gmock-all.cc" "/home/kobosp/SLMAC/CameraVideoTopic/build/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+  "/usr/src/googletest/googlemock/src/gmock-all.cc" "/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/kobosp/SLMAC/CameraVideoTopic/include"
+  "/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/include"
   "/usr/src/googletest/googlemock/include"
   "/usr/src/googletest/googlemock"
   "/usr/src/googletest/googletest/include"
@@ -26,7 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/kobosp/SLMAC/CameraVideoTopic/build/gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

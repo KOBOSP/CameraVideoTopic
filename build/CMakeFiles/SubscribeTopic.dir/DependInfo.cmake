@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kobosp/SLMAC/CameraVideoTopic/src/SubscribeTopic.cpp" "/home/kobosp/SLMAC/CameraVideoTopic/build/CMakeFiles/SubscribeTopic.dir/src/SubscribeTopic.cpp.o"
+  "/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/src/SubscribeTopic.cpp" "/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/CMakeFiles/SubscribeTopic.dir/src/SubscribeTopic.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -23,7 +23,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/opencv4"
-  "/usr/local/include/opencv"
+  "/home/kobosp/opencv-3.4.18/18InstallDir/include"
+  "/home/kobosp/opencv-3.4.18/18InstallDir/include/opencv"
   )
 
 # Targets to which this target links.

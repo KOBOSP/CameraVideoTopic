@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kobosp/SLMAC/CameraVideoTopic
+CMAKE_SOURCE_DIR = /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kobosp/SLMAC/CameraVideoTopic/build
+CMAKE_BINARY_DIR = /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build
 
 # Utility rule file for ROSBUILD_genmsg_py.
 
@@ -57,15 +57,15 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/CameraVideoTopic/msg/__init__.py
 
 
 ../src/CameraVideoTopic/msg/__init__.py: ../src/CameraVideoTopic/msg/_NavSatFix.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kobosp/SLMAC/CameraVideoTopic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../src/CameraVideoTopic/msg/__init__.py"
-	/opt/ros/noetic/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/kobosp/SLMAC/CameraVideoTopic/msg/NavSatFix.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../src/CameraVideoTopic/msg/__init__.py"
+	/opt/ros/noetic/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/msg/NavSatFix.msg
 
 ../src/CameraVideoTopic/msg/_NavSatFix.py: ../msg/NavSatFix.msg
 ../src/CameraVideoTopic/msg/_NavSatFix.py: /opt/ros/noetic/share/rospy/rosbuild/scripts/genmsg_py.py
 ../src/CameraVideoTopic/msg/_NavSatFix.py: /opt/ros/noetic/lib/roslib/gendeps
 ../src/CameraVideoTopic/msg/_NavSatFix.py: ../manifest.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kobosp/SLMAC/CameraVideoTopic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ../src/CameraVideoTopic/msg/_NavSatFix.py"
-	/opt/ros/noetic/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/kobosp/SLMAC/CameraVideoTopic/msg/NavSatFix.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ../src/CameraVideoTopic/msg/_NavSatFix.py"
+	/opt/ros/noetic/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/msg/NavSatFix.msg
 
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py
 ROSBUILD_genmsg_py: ../src/CameraVideoTopic/msg/__init__.py
@@ -84,6 +84,6 @@ CMakeFiles/ROSBUILD_genmsg_py.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genmsg_py.dir/clean
 
 CMakeFiles/ROSBUILD_genmsg_py.dir/depend:
-	cd /home/kobosp/SLMAC/CameraVideoTopic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kobosp/SLMAC/CameraVideoTopic /home/kobosp/SLMAC/CameraVideoTopic /home/kobosp/SLMAC/CameraVideoTopic/build /home/kobosp/SLMAC/CameraVideoTopic/build /home/kobosp/SLMAC/CameraVideoTopic/build/CMakeFiles/ROSBUILD_genmsg_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/CMakeFiles/ROSBUILD_genmsg_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genmsg_py.dir/depend
 

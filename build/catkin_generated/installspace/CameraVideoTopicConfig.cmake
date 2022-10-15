@@ -67,8 +67,8 @@ set(CameraVideoTopic_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(CameraVideoTopic_SOURCE_PREFIX /home/kobosp/SLMAC/CameraVideoTopic)
-  set(CameraVideoTopic_DEVEL_PREFIX /home/kobosp/SLMAC/CameraVideoTopic/build/devel)
+  set(CameraVideoTopic_SOURCE_PREFIX /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic)
+  set(CameraVideoTopic_DEVEL_PREFIX /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/devel)
   set(CameraVideoTopic_INSTALL_PREFIX "")
   set(CameraVideoTopic_PREFIX ${CameraVideoTopic_DEVEL_PREFIX})
 else()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /usr/local/lib;/opt/ros/noetic/lib)
+    foreach(path /usr/local/lib;/home/kobosp/ublox_driver/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

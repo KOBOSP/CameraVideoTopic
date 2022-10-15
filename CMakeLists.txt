@@ -23,10 +23,12 @@ else ()
     message(FATAL_ERROR "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif ()
 
-set(OpenCV_DIR “/usr/local/share/OpenCV”)
-find_package(OpenCV 3.4 REQUIRED)
+set(OpenCV_DIR /home/kobosp/opencv-3.4.18/18InstallDir/share/OpenCV/)
+find_package(OpenCV 3.4 REQUIRED
+        PATHS /home/kobosp/opencv-3.4.18/18InstallDir
+        NO_DEFAULT_PATH)
 if (NOT OpenCV_FOUND)
-    message(FATAL_ERROR "OpenCV > 3.4 not found.")
+    message(FATAL_ERROR "OpenCV 3.4 not found.")
 endif ()
 find_package(catkin REQUIRED COMPONENTS
         cv_bridge
@@ -57,12 +59,6 @@ catkin_package(
         CATKIN_DEPENDS roscpp std_msgs message_runtime
 )
 
-target_link_libraries(CameraPublish ${catkin_LIBRARIES}
-        /usr/local/lib/libopencv_imgproc.so.3.4
-        /usr/local/lib/libopencv_core.so.3.4)
-target_link_libraries(ImgView ${catkin_LIBRARIES}
-        /usr/local/lib/libopencv_imgproc.so.3.4
-        /usr/local/lib/libopencv_core.so.3.4)
-target_link_libraries(SubscribeTopic ${catkin_LIBRARIES}
-        /usr/local/lib/libopencv_imgproc.so.3.4
-        /usr/local/lib/libopencv_core.so.3.4)
+target_link_libraries(CameraPublish ${catkin_LIBRARIES}  ${OpenCV_LIBS})
+target_link_libraries(ImgView ${catkin_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(SubscribeTopic ${catkin_LIBRARIES} ${OpenCV_LIBS})

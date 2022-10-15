@@ -1,8 +1,8 @@
 # generated from catkin/cmake/template/pkg.context.pc.in
 CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/kobosp/SLMAC/CameraVideoTopic/build/devel/include".split(';') if "/home/kobosp/SLMAC/CameraVideoTopic/build/devel/include" != "" else []
+PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/devel/include".split(';') if "/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/devel/include" != "" else []
 PROJECT_CATKIN_DEPENDS = "roscpp;std_msgs;message_runtime".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "CameraVideoTopic"
-PROJECT_SPACE_DIR = "/home/kobosp/SLMAC/CameraVideoTopic/build/devel"
+PROJECT_SPACE_DIR = "/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/devel"
 PROJECT_VERSION = "0.0.0"

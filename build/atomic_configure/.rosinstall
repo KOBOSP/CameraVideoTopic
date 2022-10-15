@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/kobosp/SLMAC/CameraVideoTopic/build/devel/setup.sh
+    local-name: /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/devel/setup.sh

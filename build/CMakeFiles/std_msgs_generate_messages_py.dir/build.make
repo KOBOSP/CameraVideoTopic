@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kobosp/SLMAC/CameraVideoTopic
+CMAKE_SOURCE_DIR = /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kobosp/SLMAC/CameraVideoTopic/build
+CMAKE_BINARY_DIR = /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build
 
 # Utility rule file for std_msgs_generate_messages_py.
 
@@ -67,6 +67,6 @@ CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 .PHONY : CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 CMakeFiles/std_msgs_generate_messages_py.dir/depend:
-	cd /home/kobosp/SLMAC/CameraVideoTopic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kobosp/SLMAC/CameraVideoTopic /home/kobosp/SLMAC/CameraVideoTopic /home/kobosp/SLMAC/CameraVideoTopic/build /home/kobosp/SLMAC/CameraVideoTopic/build /home/kobosp/SLMAC/CameraVideoTopic/build/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/std_msgs_generate_messages_py.dir/depend
 
