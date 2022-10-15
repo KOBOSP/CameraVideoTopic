@@ -26,6 +26,7 @@ rostopic hz /usb_cam/image_raw
     <param name="autosize" value="true" />
   </node>
 </launch>
+ *
  */
 
 
