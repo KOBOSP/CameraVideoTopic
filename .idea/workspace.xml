@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="NUC12FixBug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CameraPublish.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/CameraPublish.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <workItem from="1659438865931" duration="847000" />
       <workItem from="1659452300023" duration="4132000" />
       <workItem from="1661863705359" duration="16640000" />
-      <workItem from="1665748034699" duration="14536000" />
+      <workItem from="1665748034699" duration="15008000" />
     </task>
     <task id="LOCAL-00001" summary="NUC12FixBug">
       <created>1665808629023</created>
@@ -85,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665809061583</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="NUC12FixBug">
+      <created>1665811917294</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665811917294</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
