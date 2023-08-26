@@ -4,6 +4,7 @@
 #include <opencv2/calib3d.hpp>
 #include <cv_bridge/cv_bridge.h>
 #include <iostream>
+
 using namespace std;
 
 /*
@@ -34,50 +35,58 @@ int main(int argc, char **argv) {
     ros::init(argc, argv, "CameraPublish");
     ros::NodeHandle nh;
     image_transport::ImageTransport it(nh);
-    image_transport::Publisher PubLeft = it.advertise("/camera/left/image_raw", 1);
-    image_transport::Publisher PubRight = it.advertise("/camera/right/image_raw", 1);
+    image_transport::Publisher PubLeft = it.advertise("/camera/left/image_raw", 10);
+    image_transport::Publisher PubRight = it.advertise("/camera/right/image_raw", 10);
 
-    int deviceID = argv[1][0]-'0';
-    cv::VideoCapture cap(deviceID,cv::CAP_V4L2);
-    /*
-#if 0
-	inputVideo.open(0, cv::CAP_V4L2);
-#else
-	inputVideo.open(0, cv::CAP_GSTREAMER);
-     */
-    if (!cap.isOpened()) {
-        cerr << "ERROR! Unable to open camera\n";
+    cv::VideoCapture CapLeft(argv[1][0] - '0', cv::CAP_V4L2);
+    cv::VideoCapture CapRight(argv[1][1] - '0', cv::CAP_V4L2);
+    if (!CapLeft.isOpened() || !CapRight.isOpened()) {
+        cerr << "ERROR! Unable to open camera " << argv[1][0] << " " << argv[1][1] << "\n";
         return -1;
     }
-    cv::Mat ImgOri, ImgLeft, ImgRight;
 
+    CapLeft.set(cv::CAP_PROP_FRAME_WIDTH, 1920);
+    cout << "CV_CAP_PROP_FRAME_WIDTH:" << CapLeft.get(cv::CAP_PROP_FRAME_WIDTH) << endl;
+    CapLeft.set(cv::CAP_PROP_FRAME_HEIGHT, 1080);
+    cout << "CAP_PROP_FRAME_HEIGHT:" << CapLeft.get(cv::CAP_PROP_FRAME_HEIGHT) << endl;
+    CapLeft.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'));
+    cout << "CAP_PROP_FOURCC:" << CapLeft.get(cv::CAP_PROP_FOURCC) << endl;
+    CapLeft.set(cv::CAP_PROP_BACKLIGHT, 2);
+    cout << "CAP_PROP_FOURCC:" << CapLeft.get(cv::CAP_PROP_BACKLIGHT) << endl;
+//    CapLeft.set(cv::CAP_PROP_FPS, 30);
+//    cout<<"CAP_PROP_FPS:"<<CapLeft.get(cv::CAP_PROP_FPS)<<endl;
+    CapRight.set(cv::CAP_PROP_FRAME_WIDTH, 1920);
+    cout << "CV_CAP_PROP_FRAME_WIDTH:" << CapRight.get(cv::CAP_PROP_FRAME_WIDTH) << endl;
+    CapRight.set(cv::CAP_PROP_FRAME_HEIGHT, 1080);
+    cout << "CAP_PROP_FRAME_HEIGHT:" << CapRight.get(cv::CAP_PROP_FRAME_HEIGHT) << endl;
+    CapRight.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'));
+    cout << "CAP_PROP_FOURCC:" << CapRight.get(cv::CAP_PROP_FOURCC) << endl;
+    CapRight.set(cv::CAP_PROP_BACKLIGHT, 2);
+    cout << "CAP_PROP_BACKLIGHT:" << CapRight.get(cv::CAP_PROP_BACKLIGHT) << endl;
 
-    cap.set(cv::CAP_PROP_FRAME_WIDTH, 1280);
-    cout<<"CV_CAP_PROP_FRAME_WIDTH:"<<cap.get(cv::CAP_PROP_FRAME_WIDTH)<<endl;
-    cap.set(cv::CAP_PROP_FRAME_HEIGHT, 480);
-    cout<<"CAP_PROP_FRAME_HEIGHT:"<<cap.get(cv::CAP_PROP_FRAME_HEIGHT)<<endl;
-    cap.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('M','J','P','G'));
-    cout<<"CAP_PROP_FOURCC:"<<cap.get(cv::CAP_PROP_FOURCC)<<endl;
-    cap.set(cv::CAP_PROP_FPS, 30);
-    cout<<"CAP_PROP_FPS:"<<cap.get(cv::CAP_PROP_FPS)<<endl;
-
-    ros::Rate loop_rate(30);
-    sensor_msgs::ImagePtr msg;
-    while (nh.ok()) {
-        cap.read(ImgOri);
-        if (ImgOri.empty()) {
-            continue;
+    ros::Rate loop_rate(1000);
+    sensor_msgs::ImagePtr MsgLeft, MsgRight;
+    cv::Mat ImgLeft, ImgRight;
+    bool Flag = true;
+    while (ros::ok()) {
+        if (Flag) {
+            CapLeft.read(ImgLeft);
+            if (!ImgLeft.empty()) {
+                std_msgs::Header hd;
+                hd.stamp = ros::Time::now();
+                MsgLeft = cv_bridge::CvImage(hd, "bgr8", ImgLeft).toImageMsg();
+                PubLeft.publish(MsgLeft);
+            }
+        } else {
+            CapRight.read(ImgRight);
+            if (!ImgRight.empty()) {
+                std_msgs::Header hd;
+                hd.stamp = ros::Time::now();
+                MsgRight = cv_bridge::CvImage(hd, "bgr8", ImgRight).toImageMsg();
+                PubRight.publish(MsgRight);
+            }
         }
-        ImgLeft = ImgOri(cv::Rect(0, 0,
-                                  ImgOri.size().width / 2, ImgOri.size().height));
-        cv::flip(ImgLeft, ImgLeft, -1);
-        msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", ImgLeft).toImageMsg();
-        PubLeft.publish(msg);
-        ImgRight = ImgOri(cv::Rect(ImgOri.size().width / 2, 0,
-                                   ImgOri.size().width / 2, ImgOri.size().height));
-        cv::flip(ImgRight, ImgRight, -1);
-        msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", ImgRight).toImageMsg();
-        PubRight.publish(msg);
+        Flag = !Flag;
         ros::spinOnce();
         loop_rate.sleep();
     }

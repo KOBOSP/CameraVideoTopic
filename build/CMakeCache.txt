@@ -302,7 +302,10 @@ CameraVideoTopic_BINARY_DIR:STATIC=/home/kobosp/ublox_driver/catkin_ws/src/Camer
 CameraVideoTopic_SOURCE_DIR:STATIC=/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic
 
 //Path to a program.
-DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+DOXYGEN_EXECUTABLE:FILEPATH=/usr/bin/doxygen
+
+//Doxygen found
+DOXYGEN_FOUND:BOOL=TRUE
 
 //Path to a program.
 EMPY_EXECUTABLE:FILEPATH=EMPY_EXECUTABLE-NOTFOUND
@@ -312,6 +315,18 @@ EMPY_SCRIPT:STRING=/usr/lib/python3/dist-packages/em.py
 
 //Single output directory for building all executables.
 EXECUTABLE_OUTPUT_PATH:PATH=
+
+//Path to a library.
+GMOCK_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libgmock.a
+
+//Path to a library.
+GMOCK_LIBRARY_DEBUG:FILEPATH=GMOCK_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+GMOCK_MAIN_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libgmock_main.a
+
+//Path to a library.
+GMOCK_MAIN_LIBRARY_DEBUG:FILEPATH=GMOCK_MAIN_LIBRARY_DEBUG-NOTFOUND
 
 //The directory containing a CMake configuration file for GMock.
 GMock_DIR:PATH=GMock_DIR-NOTFOUND
@@ -330,6 +345,9 @@ GTEST_MAIN_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libgtest_main.a
 
 //Path to a library.
 GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
+
+//The directory containing a CMake configuration file for GTest.
+GTest_DIR:PATH=GTest_DIR-NOTFOUND
 
 //Enable installation of googletest. (Projects embedding googletest
 // may want to turn this OFF.)
@@ -593,6 +611,8 @@ CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
+//Path to cache edit program executable.
+CMAKE_EDIT_COMMAND:INTERNAL=/usr/bin/cmake-gui
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -747,6 +767,14 @@ GMOCK_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/src/googletest/googlemock/include
 GMOCK_FROM_SOURCE_LIBRARIES:INTERNAL=gmock
 GMOCK_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/build/gmock
 GMOCK_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gmock_main
+//ADVANCED property for variable: GMOCK_LIBRARY
+GMOCK_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GMOCK_LIBRARY_DEBUG
+GMOCK_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GMOCK_MAIN_LIBRARY
+GMOCK_MAIN_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GMOCK_MAIN_LIBRARY_DEBUG
+GMOCK_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_FROM_SOURCE_FOUND:INTERNAL=TRUE
 GTEST_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
 GTEST_FROM_SOURCE_LIBRARIES:INTERNAL=gtest

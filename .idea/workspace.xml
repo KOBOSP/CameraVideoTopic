@@ -3,17 +3,48 @@
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
 }</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="NUC12FixBug">
-      <change afterPath="$PROJECT_DIR$/ReadFileNameAndWrite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TSR1015mav0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rosbag2euroc.py" afterDir="false" />
+    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="IndeMindeEurocGenerate">
+      <change beforePath="$PROJECT_DIR$/.idea/CameraVideoTopic.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadFileNameAndWrite.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/src/CameraPublish.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CameraPublish.dir/src/CameraPublish.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/src/ImgView.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/ImgView.dir/src/ImgView.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/src/SubscribeTopic.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/SubscribeTopic.dir/src/SubscribeTopic.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/installspace/CameraVideoTopicConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/installspace/CameraVideoTopicConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/stamps/CameraVideoTopic/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/stamps/CameraVideoTopic/_setup_util.py.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/CameraPublish" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/CameraPublish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/ImgView" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/ImgView" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/SubscribeTopic" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/lib/CameraVideoTopic/SubscribeTopic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/devel/share/CameraVideoTopic/cmake/CameraVideoTopicConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/devel/share/CameraVideoTopic/cmake/CameraVideoTopicConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googlemock/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googlemock/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gtest/googletest/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/gtest/googletest/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rosbag2euroc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CameraPublish.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/CameraPublish.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImgView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImgView.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +59,11 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="2.3" />
   </component>
   <component name="ProjectId" id="2CI0WRuyWobQzsqUGTeO8E5o4zF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -49,6 +85,13 @@
     &quot;last_opened_file_path&quot;: &quot;/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,7 +114,8 @@
       <workItem from="1665748034699" duration="19824000" />
       <workItem from="1665820459943" duration="3787000" />
       <workItem from="1665925282998" duration="1873000" />
-      <workItem from="1665929491311" duration="627000" />
+      <workItem from="1665929491311" duration="1594000" />
+      <workItem from="1693051701396" duration="8168000" />
     </task>
     <task id="LOCAL-00001" summary="NUC12FixBug">
       <created>1665808629023</created>
@@ -122,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665817072845</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="IndeMindeEurocGenerate">
+      <created>1665932522369</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665932522369</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +193,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="NUC12FixBug" />
-    <option name="LAST_COMMIT_MESSAGE" value="NUC12FixBug" />
+    <MESSAGE value="IndeMindeEurocGenerate" />
+    <option name="LAST_COMMIT_MESSAGE" value="IndeMindeEurocGenerate" />
   </component>
 </project>
