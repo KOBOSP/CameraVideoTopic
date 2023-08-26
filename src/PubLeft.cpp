@@ -32,16 +32,14 @@ rostopic hz /usb_cam/image_raw
 
 
 int main(int argc, char **argv) {
-    ros::init(argc, argv, "CameraPublish");
+    ros::init(argc, argv, "PubLeft");
     ros::NodeHandle nh;
     image_transport::ImageTransport it(nh);
     image_transport::Publisher PubLeft = it.advertise("/camera/left/image_raw", 10);
-    image_transport::Publisher PubRight = it.advertise("/camera/right/image_raw", 10);
 
     cv::VideoCapture CapLeft(argv[1][0] - '0', cv::CAP_V4L2);
-    cv::VideoCapture CapRight(argv[1][1] - '0', cv::CAP_V4L2);
-    if (!CapLeft.isOpened() || !CapRight.isOpened()) {
-        cerr << "ERROR! Unable to open camera " << argv[1][0] << " " << argv[1][1] << "\n";
+    if (!CapLeft.isOpened()) {
+        cerr << "ERROR! Unable to open camera " << argv[1][0] << "\n";
         return -1;
     }
 
@@ -55,38 +53,18 @@ int main(int argc, char **argv) {
     cout << "CAP_PROP_FOURCC:" << CapLeft.get(cv::CAP_PROP_BACKLIGHT) << endl;
 //    CapLeft.set(cv::CAP_PROP_FPS, 30);
 //    cout<<"CAP_PROP_FPS:"<<CapLeft.get(cv::CAP_PROP_FPS)<<endl;
-    CapRight.set(cv::CAP_PROP_FRAME_WIDTH, 1920);
-    cout << "CV_CAP_PROP_FRAME_WIDTH:" << CapRight.get(cv::CAP_PROP_FRAME_WIDTH) << endl;
-    CapRight.set(cv::CAP_PROP_FRAME_HEIGHT, 1080);
-    cout << "CAP_PROP_FRAME_HEIGHT:" << CapRight.get(cv::CAP_PROP_FRAME_HEIGHT) << endl;
-    CapRight.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'));
-    cout << "CAP_PROP_FOURCC:" << CapRight.get(cv::CAP_PROP_FOURCC) << endl;
-    CapRight.set(cv::CAP_PROP_BACKLIGHT, 2);
-    cout << "CAP_PROP_BACKLIGHT:" << CapRight.get(cv::CAP_PROP_BACKLIGHT) << endl;
 
     ros::Rate loop_rate(1000);
-    sensor_msgs::ImagePtr MsgLeft, MsgRight;
-    cv::Mat ImgLeft, ImgRight;
-    bool Flag = true;
+    sensor_msgs::ImagePtr MsgLeft;
+    cv::Mat ImgLeft;
     while (ros::ok()) {
-        if (Flag) {
-            CapLeft.read(ImgLeft);
-            if (!ImgLeft.empty()) {
-                std_msgs::Header hd;
-                hd.stamp = ros::Time::now();
-                MsgLeft = cv_bridge::CvImage(hd, "bgr8", ImgLeft).toImageMsg();
-                PubLeft.publish(MsgLeft);
-            }
-        } else {
-            CapRight.read(ImgRight);
-            if (!ImgRight.empty()) {
-                std_msgs::Header hd;
-                hd.stamp = ros::Time::now();
-                MsgRight = cv_bridge::CvImage(hd, "bgr8", ImgRight).toImageMsg();
-                PubRight.publish(MsgRight);
-            }
+        CapLeft.read(ImgLeft);
+        if (!ImgLeft.empty()) {
+            std_msgs::Header hd;
+            hd.stamp = ros::Time::now();
+            MsgLeft = cv_bridge::CvImage(hd, "bgr8", ImgLeft).toImageMsg();
+            PubLeft.publish(MsgLeft);
         }
-        Flag = !Flag;
         ros::spinOnce();
         loop_rate.sleep();
     }

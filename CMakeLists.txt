@@ -32,12 +32,13 @@ include_directories(
         ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(CameraPublish src/CameraPublish.cpp)
+add_executable(PubLeft src/PubLeft.cpp)
+add_executable(PubRight src/PubRight.cpp)
 add_executable(ImgView src/ImgView.cpp)
 add_executable(SubscribeTopic src/SubscribeTopic.cpp)
 
 catkin_package()
-
-target_link_libraries(CameraPublish ${catkin_LIBRARIES}  ${OpenCV_LIBS})
+target_link_libraries(PubLeft ${catkin_LIBRARIES}  ${OpenCV_LIBS})
+target_link_libraries(PubRight ${catkin_LIBRARIES}  ${OpenCV_LIBS})
 target_link_libraries(ImgView ${catkin_LIBRARIES} ${OpenCV_LIBS})
 target_link_libraries(SubscribeTopic ${catkin_LIBRARIES} ${OpenCV_LIBS})
