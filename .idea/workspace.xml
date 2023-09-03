@@ -15,11 +15,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="StereoPPS">
-      <change afterPath="$PROJECT_DIR$/src/PubRight.cpp" afterDir="false" />
+    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="StereoTwoNodeCanSync">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CameraPublish.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubLeft.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PubLeft.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubLeft.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PubRight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubRight.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,27 +47,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/src"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/src&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -95,7 +94,8 @@
       <workItem from="1665820459943" duration="3787000" />
       <workItem from="1665925282998" duration="1873000" />
       <workItem from="1665929491311" duration="1594000" />
-      <workItem from="1693051701396" duration="9699000" />
+      <workItem from="1693051701396" duration="13526000" />
+      <workItem from="1693553340264" duration="8499000" />
     </task>
     <task id="LOCAL-00001" summary="NUC12FixBug">
       <created>1665808629023</created>
@@ -160,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693069591000</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="StereoTwoNodeCanSync">
+      <created>1693071177794</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693071177794</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +189,7 @@
     <MESSAGE value="NUC12FixBug" />
     <MESSAGE value="IndeMindeEurocGenerate" />
     <MESSAGE value="StereoPPS" />
-    <option name="LAST_COMMIT_MESSAGE" value="StereoPPS" />
+    <MESSAGE value="StereoTwoNodeCanSync" />
+    <option name="LAST_COMMIT_MESSAGE" value="StereoTwoNodeCanSync" />
   </component>
 </project>
