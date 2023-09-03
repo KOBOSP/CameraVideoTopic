@@ -15,7 +15,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="StereoTwoNodeCanSync">
+    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="StereoTwoNodeSyncByCNT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PubLeft.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubLeft.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PubRight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubRight.cpp" afterDir="false" />
@@ -64,13 +64,6 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,7 +88,8 @@
       <workItem from="1665925282998" duration="1873000" />
       <workItem from="1665929491311" duration="1594000" />
       <workItem from="1693051701396" duration="13526000" />
-      <workItem from="1693553340264" duration="8499000" />
+      <workItem from="1693553340264" duration="15787000" />
+      <workItem from="1693730203324" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="NUC12FixBug">
       <created>1665808629023</created>
@@ -167,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693071177794</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="StereoTwoNodeSyncByCNT">
+      <created>1693719669457</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1693719669457</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +191,7 @@
     <MESSAGE value="IndeMindeEurocGenerate" />
     <MESSAGE value="StereoPPS" />
     <MESSAGE value="StereoTwoNodeCanSync" />
-    <option name="LAST_COMMIT_MESSAGE" value="StereoTwoNodeCanSync" />
+    <MESSAGE value="StereoTwoNodeSyncByCNT" />
+    <option name="LAST_COMMIT_MESSAGE" value="StereoTwoNodeSyncByCNT" />
   </component>
 </project>

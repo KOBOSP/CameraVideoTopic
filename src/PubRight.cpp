@@ -53,12 +53,32 @@ int main(int argc, char **argv) {
     cout << "CAP_PROP_FOURCC:" << CapLeft.get(cv::CAP_PROP_BACKLIGHT) << endl;
 //    CapLeft.set(cv::CAP_PROP_FPS, 30);
 //    cout<<"CAP_PROP_FPS:"<<CapLeft.get(cv::CAP_PROP_FPS)<<endl;
+//    int FrameId = 0;
+//    ros::Rate loop_rate(1000);
+//    sensor_msgs::ImagePtr MsgLeft;
+//    cv::Mat ImgLeft;
+//    while (ros::ok()) {
+//        CapLeft.read(ImgLeft);
+//        if (!ImgLeft.empty()) {
+//            std_msgs::Header hd;
+//            hd.stamp = ros::Time::now();
+//            hd.frame_id = to_string(FrameId++);
+//            MsgLeft = cv_bridge::CvImage(hd, "bgr8", ImgLeft).toImageMsg();
+//            PubLeft.publish(MsgLeft);
+//        }
+//        if (FrameId > 30) {
+//            FrameId = 0;
+//        }
+//        ros::spinOnce();
+//        loop_rate.sleep();
+//    }
+
 
     int FrameId = 0;
     ros::Rate loop_rate(1000);
     sensor_msgs::ImagePtr MsgLeft;
     cv::Mat ImgLeft;
-    u_int32_t LastSecond = 0, LastMS = 0, NowMS, PastMS, HaveFrameInSecond = 0;
+    u_int32_t LastSecond = 0, LastMS = 0, NowMS, PastMS, HaveFrameInSecond = -1;
     while (ros::ok()) {
         CapLeft.read(ImgLeft);
         if (!ImgLeft.empty()) {
@@ -66,25 +86,23 @@ int main(int argc, char **argv) {
             hd.stamp = ros::Time::now();
             NowMS = hd.stamp.nsec / 1000000;
             PastMS = ((NowMS - LastMS) >= 0 ? (NowMS - LastMS) : (NowMS - LastMS) + 1000);
-            cout << " " << LastMS << " " << NowMS << " " << PastMS << endl;
-            if (PastMS > 45 && HaveFrameInSecond > 29) {
+            LastMS = NowMS;
+            if (PastMS > 60 && (HaveFrameInSecond > 24 || HaveFrameInSecond < 0)) {//37.5ms*25fps=937.5ms
+                cout << " " << LastMS << " " << NowMS << " " << PastMS << endl;
                 HaveFrameInSecond = 0;
                 LastSecond = hd.stamp.sec;
             }
+
             if (LastSecond > 1) {
                 hd.stamp.sec = LastSecond;
-                hd.stamp.nsec = HaveFrameInSecond * 31 * 1000000;
-                hd.frame_id = to_string(HaveFrameInSecond);
+                hd.stamp.nsec = HaveFrameInSecond * 38 * 1000000;
+                hd.frame_id = to_string(HaveFrameInSecond++);
                 MsgLeft = cv_bridge::CvImage(hd, "bgr8", ImgLeft).toImageMsg();
                 PubLeft.publish(MsgLeft);
             }
-            LastMS = NowMS;
-            HaveFrameInSecond++;
         }
         ros::spinOnce();
         loop_rate.sleep();
     }
-
-
     return 0;
 }
