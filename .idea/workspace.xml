@@ -15,11 +15,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="StereoTwoNodeSyncByTime50msInteval">
-      <change afterPath="$PROJECT_DIR$/src/PubIMU.cpp" afterDir="false" />
+    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="StereoTwoNodeNoSync30FPS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImgView.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImgView.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PubLeft.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubLeft.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PubRight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubRight.cpp" afterDir="false" />
     </list>
@@ -102,7 +100,7 @@
       <workItem from="1693730203324" duration="127000" />
       <workItem from="1693752346037" duration="7126000" />
       <workItem from="1693824695701" duration="8619000" />
-      <workItem from="1693842775418" duration="9832000" />
+      <workItem from="1693842775418" duration="15087000" />
     </task>
     <task id="LOCAL-00001" summary="NUC12FixBug">
       <created>1665808629023</created>
@@ -188,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693730237275</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="StereoTwoNodeNoSync30FPS">
+      <created>1693905109800</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1693905109800</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +218,7 @@
     <MESSAGE value="StereoTwoNodeCanSync" />
     <MESSAGE value="StereoTwoNodeSyncByCNT" />
     <MESSAGE value="StereoTwoNodeSyncByTime50msInteval" />
-    <option name="LAST_COMMIT_MESSAGE" value="StereoTwoNodeSyncByTime50msInteval" />
+    <MESSAGE value="StereoTwoNodeNoSync30FPS" />
+    <option name="LAST_COMMIT_MESSAGE" value="StereoTwoNodeNoSync30FPS" />
   </component>
 </project>

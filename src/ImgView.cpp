@@ -31,8 +31,8 @@ int main(int argc, char **argv) {
     cv::namedWindow("ImgRightView");
     cv::startWindowThread();
     image_transport::ImageTransport it(nh);
-    image_transport::Subscriber SubLeft = it.subscribe("/camera/left/image_raw", 10, ImgLeftCallback);
-    image_transport::Subscriber SubRight = it.subscribe("/camera/right/image_raw", 10, ImgRightCallback);
+    image_transport::Subscriber SubLeft = it.subscribe("/leftimg", 1, ImgLeftCallback);
+    image_transport::Subscriber SubRight = it.subscribe("/rightimg", 1, ImgRightCallback);
     ros::spin();
     cv::destroyWindow("ImgLeftView");
     cv::destroyWindow("ImgRightView");
