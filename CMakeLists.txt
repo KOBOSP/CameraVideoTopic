@@ -19,6 +19,7 @@ find_package(catkin REQUIRED COMPONENTS
         sensor_msgs
         std_msgs
         message_generation
+        serial
         )
 add_message_files(
         DIRECTORY msg
@@ -35,10 +36,12 @@ include_directories(
 add_executable(PubLeft src/PubLeft.cpp)
 add_executable(PubRight src/PubRight.cpp)
 add_executable(ImgView src/ImgView.cpp)
+add_executable(PubIMU src/PubIMU.cpp)
 add_executable(SubscribeTopic src/SubscribeTopic.cpp)
 
 catkin_package()
 target_link_libraries(PubLeft ${catkin_LIBRARIES}  ${OpenCV_LIBS})
 target_link_libraries(PubRight ${catkin_LIBRARIES}  ${OpenCV_LIBS})
 target_link_libraries(ImgView ${catkin_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(PubIMU ${catkin_LIBRARIES})
 target_link_libraries(SubscribeTopic ${catkin_LIBRARIES} ${OpenCV_LIBS})

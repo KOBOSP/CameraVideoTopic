@@ -15,8 +15,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="StereoTwoNodeSyncByCNT">
+    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="StereoTwoNodeSyncByTime50msInteval">
+      <change afterPath="$PROJECT_DIR$/src/PubIMU.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/package.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PubLeft.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubLeft.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PubRight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubRight.cpp" afterDir="false" />
     </list>
@@ -64,6 +67,13 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -89,7 +99,10 @@
       <workItem from="1665929491311" duration="1594000" />
       <workItem from="1693051701396" duration="13526000" />
       <workItem from="1693553340264" duration="15787000" />
-      <workItem from="1693730203324" duration="10000" />
+      <workItem from="1693730203324" duration="127000" />
+      <workItem from="1693752346037" duration="7126000" />
+      <workItem from="1693824695701" duration="8619000" />
+      <workItem from="1693842775418" duration="9832000" />
     </task>
     <task id="LOCAL-00001" summary="NUC12FixBug">
       <created>1665808629023</created>
@@ -168,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693719669457</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="StereoTwoNodeSyncByTime50msInteval">
+      <created>1693730237275</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1693730237275</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +212,7 @@
     <MESSAGE value="StereoPPS" />
     <MESSAGE value="StereoTwoNodeCanSync" />
     <MESSAGE value="StereoTwoNodeSyncByCNT" />
-    <option name="LAST_COMMIT_MESSAGE" value="StereoTwoNodeSyncByCNT" />
+    <MESSAGE value="StereoTwoNodeSyncByTime50msInteval" />
+    <option name="LAST_COMMIT_MESSAGE" value="StereoTwoNodeSyncByTime50msInteval" />
   </component>
 </project>
