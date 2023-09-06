@@ -77,8 +77,6 @@ int main(int argc, char **argv) {
                 cout << "LastMS:" << LastMS << " NowMS:" << NowMS << " PastMS:" << PastMS << endl;
                 HaveFrameInSecond = 0;
                 LastSecond = hd.stamp.sec;
-                cv::imshow("ImgLeftView", ImgLeft);
-                cv::waitKey(1);
             }
 
             if (HaveFrameInSecond < FPS) {
@@ -87,10 +85,10 @@ int main(int argc, char **argv) {
                 hd.frame_id = to_string(HaveFrameInSecond++);
                 MsgLeft = cv_bridge::CvImage(hd, "bgr8", ImgLeft).toImageMsg();
                 PubLeft.publish(MsgLeft);
+                cv::imshow("ImgLeftView", ImgLeft);
+                cv::waitKey(1);
             }
             LastMS = NowMS;
-        } else {
-
         }
         ros::spinOnce();
         loop_rate.sleep();

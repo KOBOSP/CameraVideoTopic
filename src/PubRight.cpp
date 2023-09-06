@@ -46,7 +46,6 @@ int main(int argc, char **argv) {
         return -1;
     }
 
-    cout << "CAP_PROP_FOURCC:" << CapLeft.get(cv::CAP_PROP_BACKLIGHT) << endl;
     CapLeft.set(cv::CAP_PROP_FRAME_WIDTH, 1920);
     cout << "CV_CAP_PROP_FRAME_WIDTH:" << CapLeft.get(cv::CAP_PROP_FRAME_WIDTH) << endl;
     CapLeft.set(cv::CAP_PROP_FRAME_HEIGHT, 1080);
@@ -62,13 +61,12 @@ int main(int argc, char **argv) {
     ros::Rate loop_rate(1000);
     sensor_msgs::ImagePtr MsgLeft;
     cv::Mat ImgLeft;
-    int32_t LastSecond, LastMS = 0, NowMS, PastMS, HaveFrameInSecond = 60, FPS = 20;
+    int32_t LastSecond, LastMS = 0, NowMS, PastMS, PastMSShow=0, HaveFrameInSecond = 60, FPS = 20;
     while (ros::ok()) {
         CapLeft.read(ImgLeft);
         if (!ImgLeft.empty()) {
             std_msgs::Header hd;
             hd.stamp = ros::Time::now();
-
             NowMS = hd.stamp.nsec / 1000000;
             PastMS = ((NowMS - LastMS) >= 0 ? (NowMS - LastMS) : (NowMS - LastMS) + 1000);
             if ((PastMS < (950 / FPS + 20) || PastMS > 1000) && HaveFrameInSecond > FPS - 1) {//&&innormal
@@ -80,8 +78,6 @@ int main(int argc, char **argv) {
                 cout << "LastMS:" << LastMS << " NowMS:" << NowMS << " PastMS:" << PastMS << endl;
                 HaveFrameInSecond = 0;
                 LastSecond = hd.stamp.sec;
-                cv::imshow("ImgRightView", ImgLeft);
-                cv::waitKey(1);
             }
 
             if (HaveFrameInSecond < FPS) {
@@ -90,6 +86,8 @@ int main(int argc, char **argv) {
                 hd.frame_id = to_string(HaveFrameInSecond++);
                 MsgLeft = cv_bridge::CvImage(hd, "bgr8", ImgLeft).toImageMsg();
                 PubLeft.publish(MsgLeft);
+                cv::imshow("ImgRightView", ImgLeft);
+                cv::waitKey(1);
             }
             LastMS = NowMS;
         }
