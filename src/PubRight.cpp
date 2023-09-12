@@ -45,6 +45,7 @@ int main(int argc, char **argv) {
         cerr << "ERROR! Unable to open camera " << argv[1][0] << "\n";
         return -1;
     }
+    int32_t HaveFrameInSecond = 0, FPS = 30;
 
     CapLeft.set(cv::CAP_PROP_FRAME_WIDTH, 1920);
     cout << "CV_CAP_PROP_FRAME_WIDTH:" << CapLeft.get(cv::CAP_PROP_FRAME_WIDTH) << endl;
@@ -52,44 +53,27 @@ int main(int argc, char **argv) {
     cout << "CAP_PROP_FRAME_HEIGHT:" << CapLeft.get(cv::CAP_PROP_FRAME_HEIGHT) << endl;
     CapLeft.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'));
     cout << "CAP_PROP_FOURCC:" << CapLeft.get(cv::CAP_PROP_FOURCC) << endl;
-    CapLeft.set(cv::CAP_PROP_BACKLIGHT, 2);
+    CapLeft.set(cv::CAP_PROP_BACKLIGHT, 0);
     cout << "CAP_PROP_FOURCC:" << CapLeft.get(cv::CAP_PROP_BACKLIGHT) << endl;
-//    CapLeft.set(cv::CAP_PROP_FPS, 30);
-//    cout<<"CAP_PROP_FPS:"<<CapLeft.get(cv::CAP_PROP_FPS)<<endl;
+    CapLeft.set(cv::CAP_PROP_FPS, FPS);
+    cout<<"CAP_PROP_FPS:"<<CapLeft.get(cv::CAP_PROP_FPS)<<endl;
 
-    int FrameId = 0;
     ros::Rate loop_rate(1000);
     sensor_msgs::ImagePtr MsgLeft;
     cv::Mat ImgLeft;
-    int32_t LastSecond, LastMS = 0, NowMS, PastMS, PastMSShow=0, HaveFrameInSecond = 60, FPS = 20;
     while (ros::ok()) {
         CapLeft.read(ImgLeft);
         if (!ImgLeft.empty()) {
             std_msgs::Header hd;
             hd.stamp = ros::Time::now();
-            NowMS = hd.stamp.nsec / 1000000;
-            PastMS = ((NowMS - LastMS) >= 0 ? (NowMS - LastMS) : (NowMS - LastMS) + 1000);
-            if ((PastMS < (950 / FPS + 20) || PastMS > 1000) && HaveFrameInSecond > FPS - 1) {//&&innormal
-                LastMS = NowMS;
-                continue;
-            }
-
-            if ((PastMS > (950 / FPS + 20)) && (HaveFrameInSecond > FPS - 2)) {
-                cout << "LastMS:" << LastMS << " NowMS:" << NowMS << " PastMS:" << PastMS << endl;
+            hd.frame_id = to_string(HaveFrameInSecond++);
+            MsgLeft = cv_bridge::CvImage(hd, "bgr8", ImgLeft).toImageMsg();
+            PubLeft.publish(MsgLeft);
+            cv::imshow("ImgRightView", ImgLeft);
+            cv::waitKey(1);
+            if (HaveFrameInSecond == FPS) {
                 HaveFrameInSecond = 0;
-                LastSecond = hd.stamp.sec;
             }
-
-            if (HaveFrameInSecond < FPS) {
-                hd.stamp.sec = LastSecond;
-                hd.stamp.nsec = HaveFrameInSecond * (950 / FPS) * 1000000;
-                hd.frame_id = to_string(HaveFrameInSecond++);
-                MsgLeft = cv_bridge::CvImage(hd, "bgr8", ImgLeft).toImageMsg();
-                PubLeft.publish(MsgLeft);
-                cv::imshow("ImgRightView", ImgLeft);
-                cv::waitKey(1);
-            }
-            LastMS = NowMS;
         }
         ros::spinOnce();
         loop_rate.sleep();
