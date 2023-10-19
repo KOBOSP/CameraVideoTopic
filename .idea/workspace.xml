@@ -15,10 +15,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="StereoTwoNodeSync20FPSRosBag">
+    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="IMUADIS16505,StereoAR0234,TimeSync20FPS+100ms,butsometimes frame lost,so next is ar0144 stereo in one frame">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PubLeft.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubLeft.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PubRight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubRight.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,18 +46,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/home/kobosp/ublox_driver/catkin_ws/src/livox_ros_driver2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kobosp/ublox_driver/catkin_ws/src/livox_ros_driver2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -98,7 +97,12 @@
       <workItem from="1694230216271" duration="4875000" />
       <workItem from="1694265793828" duration="54000" />
       <workItem from="1694284235857" duration="700000" />
-      <workItem from="1694404086589" duration="1661000" />
+      <workItem from="1694404086589" duration="3583000" />
+      <workItem from="1694577501598" duration="4705000" />
+      <workItem from="1694864882186" duration="666000" />
+      <workItem from="1694944409957" duration="613000" />
+      <workItem from="1694963857178" duration="106000" />
+      <workItem from="1697707435015" duration="338000" />
     </task>
     <task id="LOCAL-00001" summary="NUC12FixBug">
       <created>1665808629023</created>
@@ -205,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694015912252</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="IMUADIS16505,StereoAR0234,TimeSync20FPS+100ms,butsometimes frame lost,so next is ar0144 stereo in one frame">
+      <created>1694490706217</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1694490706217</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +244,7 @@
     <MESSAGE value="StereoTwoNodeNoSync30FPS" />
     <MESSAGE value="StereoTwoNodeSync30FPSCalibra" />
     <MESSAGE value="StereoTwoNodeSync20FPSRosBag" />
-    <option name="LAST_COMMIT_MESSAGE" value="StereoTwoNodeSync20FPSRosBag" />
+    <MESSAGE value="IMUADIS16505,StereoAR0234,TimeSync20FPS+100ms,butsometimes frame lost,so next is ar0144 stereo in one frame" />
+    <option name="LAST_COMMIT_MESSAGE" value="IMUADIS16505,StereoAR0234,TimeSync20FPS+100ms,butsometimes frame lost,so next is ar0144 stereo in one frame" />
   </component>
 </project>
