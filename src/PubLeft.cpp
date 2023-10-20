@@ -31,60 +31,48 @@ rostopic hz /usb_cam/image_raw
  */
 
 int main(int argc, char **argv) {
-    ros::init(argc, argv, "CameraPublish");
+    cv::namedWindow("ImgLeftView");
+    cv::startWindowThread();
+    ros::init(argc, argv, "PubLeft");
     ros::NodeHandle nh;
     image_transport::ImageTransport it(nh);
-    image_transport::Publisher PubLeftColor = it.advertise("/leftcolor", 1);
-//    image_transport::Publisher PubLeftGray = it.advertise("/leftgray", 1);
-    image_transport::Publisher PubRightColor = it.advertise("/rightcolor", 1);
-//    image_transport::Publisher PubRightGray = it.advertise("/rightgray", 1);
+    image_transport::Publisher PubLeft = it.advertise("/leftcolor", 10);
 
-    cv::namedWindow("ImgOri");
-    cv::startWindowThread();
-    cv::VideoCapture cap(argv[1][0] - '0', cv::CAP_V4L2);
-    if (!cap.isOpened()) {
-        cerr << "ERROR! Unable to open camera\n";
+    cv::VideoCapture CapLeft(argv[1][0] - '0', cv::CAP_V4L2);
+    if (!CapLeft.isOpened()) {
+        cerr << "ERROR! Unable to open camera " << argv[1][0] << "\n";
         return -1;
     }
-    cv::Mat ImgOri, ImgLeftColor, ImgRightColor, ImgLeftGray, ImgRightGray;
+    int32_t HaveFrameInSecond = 0, FPS = 30;
 
-    cap.set(cv::CAP_PROP_FRAME_WIDTH, 2560);
-    cout << "CV_CAP_PROP_FRAME_WIDTH:" << cap.get(cv::CAP_PROP_FRAME_WIDTH) << endl;
-    cap.set(cv::CAP_PROP_FRAME_HEIGHT, 720);
-    cout << "CAP_PROP_FRAME_HEIGHT:" << cap.get(cv::CAP_PROP_FRAME_HEIGHT) << endl;
-    cap.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'));
-    cout << "CAP_PROP_FOURCC:" << cap.get(cv::CAP_PROP_FOURCC) << endl;
-    cap.set(cv::CAP_PROP_FPS, 30);
-    cout << "CAP_PROP_FPS:" << cap.get(cv::CAP_PROP_FPS) << endl;
+    CapLeft.set(cv::CAP_PROP_FRAME_WIDTH, 1920);
+    cout << "CV_CAP_PROP_FRAME_WIDTH:" << CapLeft.get(cv::CAP_PROP_FRAME_WIDTH) << endl;
+    CapLeft.set(cv::CAP_PROP_FRAME_HEIGHT, 1080);
+    cout << "CAP_PROP_FRAME_HEIGHT:" << CapLeft.get(cv::CAP_PROP_FRAME_HEIGHT) << endl;
+    CapLeft.set(cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc('M', 'J', 'P', 'G'));
+    cout << "CAP_PROP_FOURCC:" << CapLeft.get(cv::CAP_PROP_FOURCC) << endl;
+    CapLeft.set(cv::CAP_PROP_BACKLIGHT, 0);
+    cout << "CAP_PROP_FOURCC:" << CapLeft.get(cv::CAP_PROP_BACKLIGHT) << endl;
+    CapLeft.set(cv::CAP_PROP_FPS, FPS);
+    cout<<"CAP_PROP_FPS:"<<CapLeft.get(cv::CAP_PROP_FPS)<<endl;
 
     ros::Rate loop_rate(1000);
-    sensor_msgs::ImagePtr msg;
-    while (nh.ok()) {
-        cap.read(ImgOri);
-        if (ImgOri.empty()) {
-            continue;
+    sensor_msgs::ImagePtr MsgLeft;
+    cv::Mat ImgLeft;
+    while (ros::ok()) {
+        CapLeft.read(ImgLeft);
+        if (!ImgLeft.empty()) {
+            std_msgs::Header hd;
+            hd.stamp = ros::Time::now();
+            hd.frame_id = to_string(HaveFrameInSecond++);
+            MsgLeft = cv_bridge::CvImage(hd, "bgr8", ImgLeft).toImageMsg();
+            PubLeft.publish(MsgLeft);
+            cv::imshow("ImgRightView", ImgLeft);
+            cv::waitKey(1);
+            if (HaveFrameInSecond == FPS) {
+                HaveFrameInSecond = 0;
+            }
         }
-        std_msgs::Header hd;
-        hd.stamp = ros::Time::now();
-        hd.frame_id = "AR0144Stereo";
-        ImgLeftColor = ImgOri(cv::Rect(ImgOri.size().width / 2, 0,
-                                       ImgOri.size().width / 2, ImgOri.size().height));
-        msg = cv_bridge::CvImage(hd, "bgr8", ImgLeftColor).toImageMsg();
-        PubLeftColor.publish(msg);
-//        cvtColor(ImgLeftColor, ImgLeftGray, cv::COLOR_RGB2GRAY);
-//        msg = cv_bridge::CvImage(hd, "mono8", ImgLeftGray).toImageMsg();
-//        PubLeftGray.publish(msg);
-
-
-        ImgRightColor = ImgOri(cv::Rect(0, 0,
-                                        ImgOri.size().width / 2, ImgOri.size().height));
-        msg = cv_bridge::CvImage(hd, "bgr8", ImgRightColor).toImageMsg();
-        PubRightColor.publish(msg);
-//        cvtColor(ImgRightColor, ImgRightGray, cv::COLOR_RGB2GRAY);
-//        msg = cv_bridge::CvImage(hd, "mono8", ImgRightGray).toImageMsg();
-//        PubRightGray.publish(msg);
-        cv::imshow("ImgOri", ImgOri);
-        cv::waitKey(1);
         ros::spinOnce();
         loop_rate.sleep();
     }

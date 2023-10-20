@@ -38,7 +38,7 @@ int main(int argc, char **argv) {
     ros::init(argc, argv, "PubRight");
     ros::NodeHandle nh;
     image_transport::ImageTransport it(nh);
-    image_transport::Publisher PubLeft = it.advertise("/rightimg", 10);
+    image_transport::Publisher PubLeft = it.advertise("/rightcolor", 10);
 
     cv::VideoCapture CapLeft(argv[1][0] - '0', cv::CAP_V4L2);
     if (!CapLeft.isOpened()) {
