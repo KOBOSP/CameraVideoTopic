@@ -60,7 +60,7 @@ int main(int argc, char **argv) {
 
     ros::Rate loop_rate(1000);
     sensor_msgs::ImagePtr MsgLeft;
-    cv::Mat ImgLeft;
+    cv::Mat ImgLeft, ImgLeftSmall;
     while (ros::ok()) {
         CapLeft.read(ImgLeft);
         if (!ImgLeft.empty()) {
@@ -83,7 +83,8 @@ int main(int argc, char **argv) {
             hd.frame_id = to_string(HaveFrameInSecond++);
             MsgLeft = cv_bridge::CvImage(hd, "bgr8", ImgLeft).toImageMsg();
             PubLeft.publish(MsgLeft);
-            cv::imshow("ImgRightView", ImgLeft);
+            cv::resize(ImgLeft, ImgLeftSmall, cv::Size(640, 360));
+            cv::imshow("ImgRightView", ImgLeftSmall);
             cv::waitKey(1);
         }
         ros::spinOnce();
