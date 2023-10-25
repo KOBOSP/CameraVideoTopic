@@ -24,6 +24,8 @@
   <build_depend>opencv2</build_depend>
   <build_depend>serial</build_depend>
   <build_depend>message_generation</build_depend>
+  <build_depend>ch347</build_depend>
+
 
   <build_export_depend>opencv2</build_export_depend>
   <build_export_depend>cv_bridge</build_export_depend>
@@ -32,6 +34,7 @@
   <build_export_depend>sensor_msgs</build_export_depend>
   <build_export_depend>std_msgs</build_export_depend>
   <build_export_depend>serial</build_export_depend>
+  <build_export_depend>ch347</build_export_depend>
 
 
   <exec_depend>cv_bridge</exec_depend>
@@ -41,6 +44,8 @@
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>opencv2</exec_depend>
   <exec_depend>serial</exec_depend>
+  <exec_depend>ch347</exec_depend>
+
   <exec_depend>message_runtime</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->

@@ -29,32 +29,28 @@ generate_messages(
         DEPENDENCIES
         std_msgs
 )
-catkin_package(INCLUDE_DIRS include
-        LIBRARIES ch347 rt
-        CATKIN_DEPENDS roscpp std_msgs
-        DEPENDS ch347 rt
-        )
+
+
 include_directories(
         ${catkin_INCLUDE_DIRS} include
 )
 link_directories(
         ${catkin_LIB_DIRS} lib
 )
+set(CH347File include/ch341_lib.h include/ch347_lib.h)
 message(STATUS "-------------catkin_INCLUDE_DIRS:${catkin_INCLUDE_DIRS},,catkin_LIB_DIRS:${catkin_LIB_DIRS}.")
-set(SourceFile
-        /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/ch341_lib.h
-        /home/kobosp/ublox_driver/catkin_ws/src/CameraVideoTopic/ch347_lib.h)
+
 
 add_executable(PubLeft src/PubLeft.cpp)
 add_executable(PubRight src/PubRight.cpp)
-add_executable(PubPPS src/PubPPS.cpp)
+#add_executable(PubPPS src/PubPPS.cpp ${CH347File})
 add_executable(ImgView src/ImgView.cpp)
 add_executable(PubIMU src/PubIMU.cpp)
 add_executable(SubscribeTopic src/SubscribeTopic.cpp)
 
 target_link_libraries(PubLeft ${catkin_LIBRARIES} ${OpenCV_LIBS})
 target_link_libraries(PubRight ${catkin_LIBRARIES} ${OpenCV_LIBS})
-target_link_libraries(PubPPS ${catkin_LIBRARIES} ch347 rt)
+#target_link_libraries(PubPPS ch347 ${catkin_LIBRARIES} rt)
 target_link_libraries(ImgView ${catkin_LIBRARIES} ${OpenCV_LIBS})
 target_link_libraries(PubIMU ${catkin_LIBRARIES})
 target_link_libraries(SubscribeTopic ${catkin_LIBRARIES} ${OpenCV_LIBS})

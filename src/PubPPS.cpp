@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include "std_msgs/String.h"
 #include <sensor_msgs/TimeReference.h>
+
+#include <sys/time.h>
+#include <linux/hidraw.h>
 #include "ch347_lib.h"
 
 using namespace std;
@@ -59,7 +62,7 @@ int main(int argc, char **argv) {
             //发布主题, 消息格式使用sensor_msg::Imu标准格式（topic名称，队列长度）
             ros::Publisher IMU_read_pub = nh.advertise<sensor_msgs::TimeReference>("/gpspps", 10);
 
-            printf("<<Open device in FUNC_UART, continue\n");
+            printf("<<Open device in FUNC_SPI_I2C_GPIO, continue\n");
 
             uint8_t oInBuffer[5] = {0};//[0]:原引脚方向,[1]:电平状态,[2]:IO方向0in1out,[3]:输出数据0低1高
             oInBuffer[2] = 0xfe, oInBuffer[3] = 0xfe;//1111110,1-7输出,0输入
