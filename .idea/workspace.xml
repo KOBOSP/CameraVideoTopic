@@ -15,7 +15,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="20fps can sync ar0234 stereo and count">
+    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="small dispaly img">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PubLeft.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubLeft.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PubRight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubRight.cpp" afterDir="false" />
@@ -106,7 +106,11 @@
       <workItem from="1697707435015" duration="30042000" />
       <workItem from="1698212386156" duration="2370000" />
       <workItem from="1698214985975" duration="91000" />
-      <workItem from="1698228670984" duration="450000" />
+      <workItem from="1698228670984" duration="4210000" />
+      <workItem from="1698299403789" duration="6000" />
+      <workItem from="1698307603871" duration="1062000" />
+      <workItem from="1698329720280" duration="1225000" />
+      <workItem from="1699960811104" duration="2543000" />
     </task>
     <task id="LOCAL-00001" summary="NUC12FixBug">
       <created>1665808629023</created>
@@ -241,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698214749190</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="small dispaly img">
+      <created>1698229137379</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1698229137379</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +285,7 @@
     <MESSAGE value="PubPPs Always undefined reference to `CH347OpenDevice" />
     <MESSAGE value="PubPPs Always undefined reference to CH347OpenDevice" />
     <MESSAGE value="20fps can sync ar0234 stereo and count" />
-    <option name="LAST_COMMIT_MESSAGE" value="20fps can sync ar0234 stereo and count" />
+    <MESSAGE value="small dispaly img" />
+    <option name="LAST_COMMIT_MESSAGE" value="small dispaly img" />
   </component>
 </project>

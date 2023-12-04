@@ -73,7 +73,7 @@ int main(int argc, char **argv) {
                 ((PastMS > 1000 / FpsCamTriger) && HaveFrameInSecond >= FpsCamTriger - 1)) {
                 cout << "LastMS:" << LastMS << " NowMS:" << NowMS << " PastMS:" << PastMS << endl;
                 HaveFrameInSecond = 0;
-                LastSecond = hd.stamp.sec;
+                LastSecond = hd.stamp.sec + (NowMS > 500 ? 1 : 0);
             }
             LastMS = NowMS;
             hd.stamp.sec = LastSecond;
