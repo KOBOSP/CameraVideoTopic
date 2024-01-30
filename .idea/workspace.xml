@@ -15,10 +15,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="small dispaly img">
+    <list default="true" id="164fc92f-7e53-4f6e-8d19-2c3b033857cc" name="Changes" comment="trigger by um982 and 20fps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PubLeft.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubLeft.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PubRight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubRight.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +109,7 @@
       <workItem from="1698307603871" duration="1062000" />
       <workItem from="1698329720280" duration="1225000" />
       <workItem from="1699960811104" duration="2543000" />
-      <workItem from="1701684071522" duration="548000" />
+      <workItem from="1701684071522" duration="1051000" />
     </task>
     <task id="LOCAL-00001" summary="NUC12FixBug">
       <created>1665808629023</created>
@@ -260,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701684131598</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="trigger by um982 and 20fps">
+      <created>1701684642202</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1701684642202</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +299,7 @@
     <MESSAGE value="PubPPs Always undefined reference to CH347OpenDevice" />
     <MESSAGE value="20fps can sync ar0234 stereo and count" />
     <MESSAGE value="small dispaly img" />
-    <option name="LAST_COMMIT_MESSAGE" value="small dispaly img" />
+    <MESSAGE value="trigger by um982 and 20fps" />
+    <option name="LAST_COMMIT_MESSAGE" value="trigger by um982 and 20fps" />
   </component>
 </project>
